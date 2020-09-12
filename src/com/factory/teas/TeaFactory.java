@@ -8,6 +8,8 @@ public class TeaFactory {
 			tea = new EnglishTea();
 		} else if (country.equals("Japan")) {
 			tea = new GreenTea();
+		} else if (country.equals("Morocco")) {
+			tea = new MintTea();
 		}
 		return tea;
 	}
