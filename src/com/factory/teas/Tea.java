@@ -8,7 +8,7 @@ public class Tea {
 	}
 	
 	public void prepare() {
-		System.out.println("Brewing " + name);
+		System.out.println("Brewing " + name + "...");
 	}
 	
 	public String toString() {

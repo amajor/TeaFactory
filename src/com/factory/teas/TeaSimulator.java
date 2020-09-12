@@ -4,9 +4,15 @@ public class TeaSimulator {
 	public static void main(String[] args) {
 		TeaFactory factory = new TeaFactory();
 		TeaShop shop = new TeaShop(factory);
+
+		Tea tea1 = shop.orderTea("England");
+		Tea tea2 = shop.orderTea("Japan");
+
+		// Print feedback for the process of making tea!
+		System.out.println("\n\nAlison ordered an " + tea1.getName() + ".\n");
+		System.out.println(tea1);
 		
-		Tea tea = shop.orderTea("England");
-		System.out.println("Alison ordered an " + tea.getName() + "\n");
-		System.out.println(tea);
+		System.out.println("\n\nChris ordered a " + tea2.getName() + ".\n");
+		System.out.println(tea2);
 	}
 }
