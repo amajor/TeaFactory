@@ -10,6 +10,8 @@ public class TeaFactory {
 			tea = new GreenTea();
 		} else if (country.equals("Morocco")) {
 			tea = new MintTea();
+		} else if (country.equals("Russia")) {
+			tea = new Zavarka();
 		}
 		return tea;
 	}
