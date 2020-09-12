@@ -2,6 +2,8 @@ package com.factory.teas;
 
 public class Tea {
 	String name;
+	String steepTemp;
+	String steepTime;
 	
 	public String getName() {
 		return name;
@@ -14,6 +16,8 @@ public class Tea {
 	public String toString() {
 		StringBuffer display = new StringBuffer();
 		display.append("===== " + name + " =====\n");
+		display.append("- Bring water to " + steepTemp + ".\n");
+		display.append("- Steep for " + steepTime + ".\n");
 		
 		return display.toString();
 	}
