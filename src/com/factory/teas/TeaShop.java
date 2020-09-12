@@ -12,6 +12,8 @@ class TeaShop {
 		
 		tea = factory.brewTea(country);
 		
+		tea.prepare();
+		
 		return tea;
 	}
 }
