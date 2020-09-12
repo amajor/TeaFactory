@@ -5,5 +5,6 @@ public class EnglishTea extends Tea {
 		name = "Earl Grey";
 		steepTemp = "212F";
 		steepTime = "3-5 minutes";
+		side = "biscuits";
 	}
 }
